@@ -30,65 +30,66 @@
         {
             this.CLB_Audiences = new System.Windows.Forms.CheckedListBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.TB_NameSubject = new System.Windows.Forms.TextBox();
+            this.ListSubject = new System.Windows.Forms.Label();
+            this.AddSubject_Button = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.TB_NumberHours = new System.Windows.Forms.TextBox();
+            this.PracticeNoted = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.CreateSchedule_Button = new System.Windows.Forms.Button();
+            this.OpenExcel_Button = new System.Windows.Forms.Button();
+            this.Border1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // CLB_Audiences
             // 
+            this.CLB_Audiences.CheckOnClick = true;
             this.CLB_Audiences.FormattingEnabled = true;
-            this.CLB_Audiences.Location = new System.Drawing.Point(49, 70);
+            this.CLB_Audiences.Location = new System.Drawing.Point(37, 70);
             this.CLB_Audiences.Name = "CLB_Audiences";
-            this.CLB_Audiences.Size = new System.Drawing.Size(156, 199);
+            this.CLB_Audiences.Size = new System.Drawing.Size(168, 199);
             this.CLB_Audiences.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(49, 44);
+            this.label1.Location = new System.Drawing.Point(37, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 23);
+            this.label1.Size = new System.Drawing.Size(168, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Аудитории";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox1
+            // TB_NameSubject
             // 
-            this.textBox1.Location = new System.Drawing.Point(500, 96);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 20);
-            this.textBox1.TabIndex = 2;
+            this.TB_NameSubject.Location = new System.Drawing.Point(503, 83);
+            this.TB_NameSubject.Name = "TB_NameSubject";
+            this.TB_NameSubject.Size = new System.Drawing.Size(143, 20);
+            this.TB_NameSubject.TabIndex = 2;
             // 
-            // label2
+            // ListSubject
             // 
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(254, 70);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(193, 199);
-            this.label2.TabIndex = 4;
+            this.ListSubject.BackColor = System.Drawing.Color.White;
+            this.ListSubject.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ListSubject.Location = new System.Drawing.Point(254, 70);
+            this.ListSubject.Name = "ListSubject";
+            this.ListSubject.Size = new System.Drawing.Size(193, 199);
+            this.ListSubject.TabIndex = 4;
             // 
-            // button1
+            // AddSubject_Button
             // 
-            this.button1.Location = new System.Drawing.Point(500, 246);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(143, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Добавить предмет";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.AddSubject_Button.Location = new System.Drawing.Point(503, 222);
+            this.AddSubject_Button.Name = "AddSubject_Button";
+            this.AddSubject_Button.Size = new System.Drawing.Size(143, 23);
+            this.AddSubject_Button.TabIndex = 5;
+            this.AddSubject_Button.Text = "Добавить предмет";
+            this.AddSubject_Button.UseVisualStyleBackColor = true;
+            this.AddSubject_Button.Click += new System.EventHandler(this.AddSubject_Button_Click);
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(497, 70);
+            this.label3.Location = new System.Drawing.Point(500, 57);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(146, 23);
             this.label3.TabIndex = 6;
@@ -97,28 +98,28 @@
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(497, 173);
+            this.label5.Location = new System.Drawing.Point(500, 156);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(146, 23);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Часов";
+            this.label5.Text = "Количество часов";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox3
+            // TB_NumberHours
             // 
-            this.textBox3.Location = new System.Drawing.Point(500, 199);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(143, 20);
-            this.textBox3.TabIndex = 8;
+            this.TB_NumberHours.Location = new System.Drawing.Point(503, 182);
+            this.TB_NumberHours.Name = "TB_NumberHours";
+            this.TB_NumberHours.Size = new System.Drawing.Size(143, 20);
+            this.TB_NumberHours.TabIndex = 8;
             // 
-            // checkBox1
+            // PracticeNoted
             // 
-            this.checkBox1.Location = new System.Drawing.Point(500, 138);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(143, 24);
-            this.checkBox1.TabIndex = 11;
-            this.checkBox1.Text = "Практическая или нет";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.PracticeNoted.Location = new System.Drawing.Point(503, 121);
+            this.PracticeNoted.Name = "PracticeNoted";
+            this.PracticeNoted.Size = new System.Drawing.Size(143, 24);
+            this.PracticeNoted.TabIndex = 11;
+            this.PracticeNoted.Text = "Практическая или нет";
+            this.PracticeNoted.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -129,54 +130,53 @@
             this.label4.Text = "Предметы";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // button2
+            // CreateSchedule_Button
             // 
-            this.button2.Location = new System.Drawing.Point(254, 287);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(193, 23);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Обновить";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.CreateSchedule_Button.Location = new System.Drawing.Point(37, 287);
+            this.CreateSchedule_Button.Name = "CreateSchedule_Button";
+            this.CreateSchedule_Button.Size = new System.Drawing.Size(168, 23);
+            this.CreateSchedule_Button.TabIndex = 14;
+            this.CreateSchedule_Button.Text = "Сгенерировать расписание";
+            this.CreateSchedule_Button.UseVisualStyleBackColor = true;
+            this.CreateSchedule_Button.Click += new System.EventHandler(this.CreateSchedule_Button_Click);
             // 
-            // button3
+            // OpenExcel_Button
             // 
-            this.button3.Location = new System.Drawing.Point(49, 287);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(156, 23);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Создать";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.OpenExcel_Button.Location = new System.Drawing.Point(254, 287);
+            this.OpenExcel_Button.Name = "OpenExcel_Button";
+            this.OpenExcel_Button.Size = new System.Drawing.Size(193, 23);
+            this.OpenExcel_Button.TabIndex = 15;
+            this.OpenExcel_Button.Text = "Открыть расписание в Excel";
+            this.OpenExcel_Button.UseVisualStyleBackColor = true;
+            this.OpenExcel_Button.Click += new System.EventHandler(this.OpenExcel_Button_Click);
             // 
-            // button4
+            // Border1
             // 
-            this.button4.Location = new System.Drawing.Point(49, 329);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(156, 23);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "Открыть";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.Border1.BackColor = System.Drawing.Color.Transparent;
+            this.Border1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Border1.Location = new System.Drawing.Point(487, 44);
+            this.Border1.Name = "Border1";
+            this.Border1.Size = new System.Drawing.Size(175, 225);
+            this.Border1.TabIndex = 16;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(692, 415);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(692, 361);
+            this.Controls.Add(this.OpenExcel_Button);
+            this.Controls.Add(this.CreateSchedule_Button);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.PracticeNoted);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.TB_NumberHours);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.AddSubject_Button);
+            this.Controls.Add(this.ListSubject);
+            this.Controls.Add(this.TB_NameSubject);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CLB_Audiences);
+            this.Controls.Add(this.Border1);
             this.Name = "Main";
             this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
@@ -188,17 +188,17 @@
 
         private System.Windows.Forms.CheckedListBox CLB_Audiences;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox TB_NameSubject;
+        private System.Windows.Forms.Label ListSubject;
+        private System.Windows.Forms.Button AddSubject_Button;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox TB_NumberHours;
+        private System.Windows.Forms.CheckBox PracticeNoted;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button CreateSchedule_Button;
+        private System.Windows.Forms.Button OpenExcel_Button;
+        private System.Windows.Forms.Label Border1;
     }
 }
 
