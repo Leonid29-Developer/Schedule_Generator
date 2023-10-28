@@ -9,6 +9,6 @@
         public SelectedData_Subject(string Named, bool Practic, int Counts) 
         { Name = Named; Class = Practic; Count = Counts; }
 
-        void CountReduce() => Count -= 2;
+        public void CountReduce() => Count -= 2;
     }
 }
